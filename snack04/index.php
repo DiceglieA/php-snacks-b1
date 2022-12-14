@@ -5,11 +5,11 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 
 $numeri = [];
 
-for ($i=0; $i < 15; $i++) { 
-    $numran = rand(1, 50);
-    
-    $numeri[] = $numran;
-    
+while (count($numeri) < 15) { 
+    $numran = rand(1, 20);
+    if (!in_array($numran, $numeri)) {
+        $numeri[] = $numran;
+    };    
 }
 var_dump($numeri)
 ?>
