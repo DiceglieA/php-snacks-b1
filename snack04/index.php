@@ -7,7 +7,9 @@ $numeri = [];
 
 for ($i=0; $i < 15; $i++) { 
     $numran = rand(1, 50);
-    var_dump($numran);
+    
+    $numeri[] = $numran;
+    
 }
-
+var_dump($numeri)
 ?>
